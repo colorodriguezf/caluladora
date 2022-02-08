@@ -1,0 +1,14 @@
+#app {
+    height: 420px;
+    width:300px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+form {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+input[type="text"] {
+    width: 100%;
+}
