@@ -10,7 +10,10 @@
 <body>
     <div id="app">
         <form name="calculadora">
-            <input type="text" name="resultado" id="resultado"  autocomplete="off" readonly>
+            <div>
+                <input type="text" name="calulo" id="calculo"  autocomplete="off" readonly>
+                <input type="text" name="resultadoTotal" id="resultado"  autocomplete="off" readonly value="0">
+            </div>
 
             <input type="button" value="7" class="valor">
             <input type="button" value="8" class="valor">
@@ -28,8 +31,8 @@
             <input type="button" value="*" class="valor" >
             <br>
             <input type="button" value="0" class="valor" >
-            <input type="button" value="C" class="valor">
-            <input type="button" value="=" class="igual">
+            <input type="button" value="C" id="reiniciar">
+            <input type="button" value="=" id="igual">
             <input type="button" value="/" id="valor">
         </form>
     </div>
