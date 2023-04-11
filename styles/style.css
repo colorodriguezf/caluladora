@@ -19,8 +19,8 @@
         width: 85%;
         height:25%;
         padding:5px;
-        background-color:rgba(143, 234, 250, 0.877);
-        color: white;
+        background-color:rgb(255, 255, 255);
+        color: rgb(8, 8, 8);
         padding:15px;
         text-align:right;
         font-size: 50px;
@@ -30,8 +30,6 @@
         width:22%;
         cursor: pointer;
         font-size:25px;
-        color:white;
-        background-color:grey;
         padding:25px;
         margin:3px;
         margin-top: 10px;
@@ -39,17 +37,18 @@
         border-radius:100%;
         box-shadow: 5px 7px rgba(0,0,0,0.5);
     }
+    input[type=button]:active {
+        transform: translateY(8px);
+        background: linear-gradient(315deg, rgb(249, 218, 223), #d76169);
+
+    }
     #reiniciar, #igual {
         background-color:white;
         color:black;
     }
     .signos {
         background-color:rgb(255, 0, 98) !important;
-    }
-    input[type=button]:active {
-        transform: translateY(10px);
-        box-shadow: 0px 0px 10px 1px black;
-        background-color:rgb(45, 80, 114);
+        font-weight: bold;
     }
     .cabezal {
         padding:20px;
@@ -70,23 +69,18 @@
     
 }
 @media screen and (min-width:440px) {
-    body {
-        background-image: url("../img/fondoCalculadora.jpg");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        /* Se adapta al ancho de la pantalla(cover) */
-        background-size: cover;
-    }
     #app {
         height: 650px;
         width:580px;
-        border: 8px solid  rgb(255, 255, 98);
+        padding: 10px;
         border-radius: 15px;
-        background-color: rgb(175, 247, 160);
-      text-align: center;
-      margin:0 auto;
-      margin-top:30px;
-      box-shadow: 5px 10px 5px 5px rgba(0,0,0,0.6);
+        text-align: center;
+        margin:0 auto;
+        margin-top:30px;
+        background: rgb(255, 162, 162);
+        border-radius: 20px;
+        justify-content: center;
+        box-shadow: 2px 2px 15px rgb(248, 147, 165);
     }
     form {
         height: 100%;
@@ -96,8 +90,8 @@
         width: 90%;
         height:25%;
         padding:5px;
-        background-color:rgb(117, 125, 247);
-        color: white;
+        background-color:rgb(255, 255, 255);
+        color: rgb(8, 8, 8);
         padding:15px;
         text-align:right;
         font-size: 50px;
@@ -108,24 +102,29 @@
         cursor: pointer;
         font-size:25px;
         color:white;
-        background-color:rgb(138, 180, 219);
         padding:28px;
         margin:6px;
         border:0;
         border-radius:100%;
         box-shadow: 5px 7px rgba(0,0,0,0.5);
+        border-radius: 50%;
+        border: none;
+         background: linear-gradient(315deg, #fc7373, rgb(255, 173, 173));
+         box-shadow: 2px 2px 6px #fe8787;
     }
     #reiniciar, #igual {
-        background-color:rgb(255, 255, 255);
-        color:black;
+        background-color:rgb(250, 250, 250);
+        color:rgb(255, 0, 0);
+        font-weight: bold;
+        font-size: 2rem;
     }
     .signos {
         background-color:rgb(29, 77, 116) !important;
     }
     input[type=button]:active {
         transform: translateY(8px);
-        box-shadow: 0px 0px 10px 1px black;
-        background-color:rgb(45, 80, 114);
+        background: linear-gradient(315deg, pink, #fc737c);
+
     }
     .cabezal {
         padding:20px;

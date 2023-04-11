@@ -17,9 +17,9 @@ for (let v of valor) {
 
 }
 function obtenerValor() {
-const sonido = new Audio();
-sonido.src="sonido/ES_Bubble Blip 2 - SFX Producer.mp3";
-sonido.play();
+// const sonido = new Audio();
+// sonido.src="sonido/ES_Bubble Blip 2 - SFX Producer.mp3";
+// sonido.play();
 
 total+=  event.currentTarget.value;
 calculo.value=total;
@@ -27,16 +27,16 @@ console.log(total);
 }
 
 function resultadoFinal() {
-    const audioResultado = new Audio();
-    audioResultado.src="sonido/ES_Squeak Drip - SFX Producer.mp3";
-    audioResultado.play();
+    // const audioResultado = new Audio();
+    // audioResultado.src="sonido/ES_Squeak Drip - SFX Producer.mp3";
+    // audioResultado.play();
     resultadoTotal.value= eval(total);
     total=resultadoTotal.value;
 }
 function reiniciar() {
-    const audioResultado = new Audio();
-    audioResultado.src="sonido/ES_Squeak Drip - SFX Producer.mp3";
-    audioResultado.play();
+    // const audioResultado = new Audio();
+    // audioResultado.src="sonido/ES_Squeak Drip - SFX Producer.mp3";
+    // audioResultado.play();
     
     calculo.value ="";
     total="";
